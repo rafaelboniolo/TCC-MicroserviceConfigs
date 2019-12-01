@@ -1,5 +1,18 @@
 server:
   port: 9093
+  max-file-size: 500000KB
+  max-request-size: 500000KB
+  servlet:
+    multipart:
+      enabled: true
+
+spring:
+  thymeleaf:
+    cache: false
+    enabled: true
+    mode: HTML5
+    suffix: .html
+    prefix: classpath:/templates/
 
 eureka:
   instance:
